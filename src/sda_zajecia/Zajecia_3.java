@@ -25,6 +25,7 @@ public class Zajecia_3 {
         double number2 = scanner.nextDouble();
 
     bmi(number1,number2);
+        System.out.println("Zrobilem zadanie domowe");
     }
     public static void bmi(int weight, double height){
 
