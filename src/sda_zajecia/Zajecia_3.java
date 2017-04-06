@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 public class Zajecia_3 {
     public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
+    /*Scanner scanner = new Scanner(System.in);
         System.out.println("Insert first number: ");
         int a= scanner.nextInt();
         System.out.println("Insert second number: ");
@@ -17,7 +17,27 @@ public class Zajecia_3 {
         minMax(a,b,c);
         fahrenheitToCelcius(90);
         celciusToFarenheit(35);
+*/
+    Scanner scanner = new Scanner(System.in);
+        System.out.println("Insert your weight");
+        int number1= scanner.nextInt();
+        System.out.println("Insert your height in meters");
+        double number2 = scanner.nextDouble();
 
+    bmi(number1,number2);
+    }
+    public static void bmi(int weight, double height){
+
+        double bmi= weight/(height*height);
+        System.out.println("Your's BMI : " + bmi);
+        if ( bmi >= 18.5 &&  bmi <= 24.9){
+            System.out.println("Your BMI is correct");
+        }else if(bmi<18.5) {
+            System.out.println("Masz niedowage");
+
+        }else{
+            System.out.println("You are too FAT!!");
+        }
     }
 
     //****************************************
